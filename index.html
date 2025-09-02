@@ -37,7 +37,6 @@
     h2 { color: var(--gk-white); margin: 0 0 10px; }
     .eyebrow { text-transform: uppercase; font-size: 11px; letter-spacing: 0.15em; color: rgba(255,255,255,0.6); margin-bottom: 6px; }
 
-    /* Readability helpers */
     .prose p { margin: 0 0 14px; line-height: 1.6; }
     .prose ul, .prose ol { margin: 10px 0 0 20px; }
     .prose li { margin: 8px 0; }
@@ -46,6 +45,7 @@
     th, td { border: 1px solid rgba(255,255,255,0.25); padding: 12px; text-align: left; vertical-align: top; }
     th { background: rgba(255,255,255,0.1); color: var(--gk-white); font-weight: 600; }
     tr:nth-child(even) td { background: rgba(255,255,255,0.04); }
+    td.example-col { font-style: italic; }
 
     .beliefs-grid, .rituals-grid, .artifacts-grid, .themes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 12px; }
     .belief-box, .ritual-box, .artifact-box, .theme-card { border-radius: 14px; padding: 14px; font-size: 14px; line-height: 1.4; box-shadow: 0 2px 10px rgba(0,0,0,0.3); display: flex; flex-direction: column; gap: 6px; }
@@ -94,14 +94,14 @@
     <section class="card prose">
       <div class="eyebrow">Beliefs</div>
       <h2>Shared convictions</h2>
-      <p>Beliefs are shared ideologies or convictions that shape how a cultural group sees the world.</p>
-      <div class="beliefs-grid" id="beliefsGrid" aria-live="polite"></div>
+      <p>Beliefs are shared ideologies or convictions that shape how a cultural group sees the world.<br>Here is what r/programming believes, based on the 21 posts we analyzed.</p>
+      <div class="beliefs-grid" id="beliefsGrid"></div>
     </section>
 
     <section class="card prose">
       <div class="eyebrow">Language</div>
       <h2>Insider terms</h2>
-      <p>Language is the shared lexicon, slang, or symbols a culture uses to communicate identity.</p>
+      <p>Language is the shared lexicon, slang, or symbols a culture uses to communicate identity.<br>Here are the insider terms r/programming uses to signal identity and credibility.</p>
       <table aria-label="Language table">
         <thead><tr><th>Term</th><th>Definition</th><th>Example</th></tr></thead>
         <tbody id="languageTable"></tbody>
@@ -111,21 +111,22 @@
     <section class="card prose">
       <div class="eyebrow">Artifacts</div>
       <h2>Tools & media</h2>
-      <p>Artifacts are tangible cultural products, objects, brands, tools, or media that embody shared meaning.</p>
-      <div class="artifacts-grid" id="artifactsGrid" aria-live="polite"></div>
+      <p>Artifacts are tangible cultural products, objects, brands, tools, or media that embody shared meaning.<br>Here are the tools and media that carry special weight in r/programming discussions.</p>
+      <div class="artifacts-grid" id="artifactsGrid"></div>
     </section>
 
     <section class="card prose">
       <div class="eyebrow">Rituals</div>
       <h2>Repeated behaviors</h2>
-      <p>Rituals are collective, repeated behaviors or ceremonies that express cultural beliefs through action.</p>
-      <div class="rituals-grid" id="ritualsGrid" aria-live="polite"></div>
+      <p>Rituals are collective, repeated behaviors or ceremonies that express cultural beliefs through action.<br>Here are the behaviors r/programming members repeat to show belonging and judgment standards.</p>
+      <div class="rituals-grid" id="ritualsGrid"></div>
     </section>
 
     <section class="card prose">
       <div class="eyebrow">Themes</div>
       <h2>What ties it together</h2>
-      <div class="themes-grid" id="themesGrid" aria-live="polite"></div>
+      <p>Themes summarize patterns that connect beliefs, language, artifacts, and rituals.<br>Here are the six themes that capture r/programming's cultural DNA.</p>
+      <div class="themes-grid" id="themesGrid"></div>
     </section>
 
     <section class="card prose">
@@ -151,17 +152,17 @@
       <h2>Posts used in this analysis</h2>
       <p class="muted">We analyzed 21 r/programming posts. Listed below in citation order.</p>
       <ol>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n4xbw4/google_is_restricting_androids_freedom_say/">Google is Restricting Android's Freedom — Say Goodbye to Installing APKs</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n4xbw4/google_is_restricting_androids_freedom_say/">Google is Restricting Android's Freedom - Say Goodbye to Installing APKs</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mizw9u/in_the_future_all_food_will_be_cooked_in_a/">In the Future All Food Will Be Cooked in a Microwave</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mzofsk/aws_ceo_says_replacing_junior_developers_with_ai/">AWS CEO Says Replacing Junior Developers with AI Is the Dumbest Thing He's Ever Heard</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n5mw0m/brian_kernighan_on_rust/">Brian Kernighan on Rust</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mox7e5/github_folds_into_microsoft_following_ceo/">GitHub folds into Microsoft following CEO resignation</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n5h44i/r%C3%A9mi_forax_shows_off_project_valhallas_progress/">Rémi Forax shows off Project Valhalla's progress</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n5h44i/r%C3%A9mi_forax_shows_off_project_valhallas_progress/">Remi Forax shows off Project Valhalla's progress</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n38vz6/petition_to_stop_googles_attack_on_android_devs/">Petition to stop Google's attack on Android devs</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n5p7rk/you_vibe_it_you_run_it/">You Vibe It, You Run It</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mxs92h/coinbase_ceo_explains_why_he_fired_engineers_who/">Coinbase CEO explains why he fired engineers who didn't try AI immediately</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n4ufic/turn_off_cursor_turn_on_your_mind/">Turn off Cursor, turn on your mind</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n3guzd/the_69_billion_domino_effect_how_vmwares/">The 69 Billion Domino Effect: How VMware's debt fueled acquisition is hurting open source</a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n3guzd/the_69_billion_domino_effect_how_vmwares/">The 69 Billion Domino Effect - How VMware's debt fueled acquisition is hurting open source</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n2cmqo/thoughts_on_vibe_coding_from_a_40year_veteran/">Thoughts on Vibe Coding from a 40 year veteran</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n4rioj/i_dont_like_numpy/">I don't like NumPy</a></li>
         <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mqbyr3/no_ai_is_not_making_engineers_10x_as_productive/">No, AI is not making engineers 10x as productive</a></li>
@@ -181,7 +182,7 @@
   </main>
 
   <script>
-    // Render on DOMContentLoaded with guard so the UI never stays empty
+    // Render dynamic sections. If anything fails, show a readable fallback.
     document.addEventListener('DOMContentLoaded', function () {
       try {
         const data = {
@@ -195,16 +196,16 @@
             { text: 'Collaboration and human connection matter', emoji: '🤝❤️' }
           ],
           language: [
-            { term: 'Vibe coding', def: 'Coding by intuition or with heavy AI reliance, framed as sloppy', ex: '"If this is vibe coding, then I am basically gambling every time I run a build."' },
-            { term: 'Foot-gun', def: 'A risky feature or default that hurts the user', ex: '"Next.js middleware is a total foot-gun for production apps."' },
-            { term: 'Magic', def: 'Opaque abstractions that obscure what code is really doing', ex: '"I do not trust this framework because there is too much magic under the hood."' },
-            { term: 'Enshittification', def: 'Gradual decline of products and jobs under corporate pressure', ex: '"Tech jobs are going through the enshittification stage right now."' },
-            { term: 'Crates and cargo', def: 'Rust\'s package ecosystem, shorthand for its complexity', ex: '"I got lost in crates and cargo just trying to get a basic project running."' },
-            { term: 'Escape hatches', def: 'Ability to bypass framework defaults when needed', ex: '"I will only use it if it has escape hatches when I need more control."' },
-            { term: 'Vendor lock-in', def: 'Being trapped by a platform\'s ecosystem', ex: '"Google\'s verification scheme is just vendor lock-in in disguise."' },
-            { term: 'Hallucination', def: 'AI confidently producing wrong results', ex: '"The model hallucinated an API endpoint that does not exist."' },
-            { term: 'Fail upward', def: 'Executives moving into new roles despite failures', ex: '"Yet another CEO manages to fail upward while we clean up the mess."' },
-            { term: 'Public money, public code', def: 'Belief that government funded projects should be open source', ex: '"We need a public money, public code policy to avoid repeats of XZ."' }
+            { term: 'Vibe coding', def: 'Coding by intuition or with heavy AI reliance, framed as sloppy', ex: 'If this is vibe coding, then I am basically gambling every time I run a build.' },
+            { term: 'Foot-gun', def: 'A risky feature or default that hurts the user', ex: 'Next.js middleware is a total foot-gun for production apps.' },
+            { term: 'Magic', def: 'Opaque abstractions that obscure what code is really doing', ex: 'I do not trust this framework because there is too much magic under the hood.' },
+            { term: 'Enshittification', def: 'Gradual decline of products and jobs under corporate pressure', ex: 'Tech jobs are going through the enshittification stage right now.' },
+            { term: 'Crates and cargo', def: 'Rust\'s package ecosystem, shorthand for its complexity', ex: 'I got lost in crates and cargo just trying to get a basic project running.' },
+            { term: 'Escape hatches', def: 'Ability to bypass framework defaults when needed', ex: 'I will only use it if it has escape hatches when I need more control.' },
+            { term: 'Vendor lock-in', def: 'Being trapped by a platform\'s ecosystem', ex: 'Google\'s verification scheme is just vendor lock-in in disguise.' },
+            { term: 'Hallucination', def: 'AI confidently producing wrong results', ex: 'The model hallucinated an API endpoint that does not exist.' },
+            { term: 'Fail upward', def: 'Executives moving into new roles despite failures', ex: 'Yet another CEO manages to fail upward while we clean up the mess.' },
+            { term: 'Public money, public code', def: 'Belief that government funded projects should be open source', ex: 'We need a public money, public code policy to avoid repeats of XZ.' }
           ],
           artifacts: [
             { name: 'Android APKs / Play Store / F-Droid', meaning: 'Symbols of autonomy and resistance', emoji: '📱🔓' },
@@ -237,9 +238,8 @@
           ]
         };
 
-        // Helpers
         const byId = (id) => document.getElementById(id);
-        const mountList = (el, arr, render) => { arr.forEach((item, i) => el.appendChild(render(item, i))); };
+        const mountList = (el, arr, render) => { if (!el) return; arr.forEach((item, i) => el.appendChild(render(item, i))); };
 
         // Beliefs
         mountList(byId('beliefsGrid'), data.beliefs, (b) => {
@@ -252,7 +252,10 @@
         // Language
         mountList(byId('languageTable'), data.language, (l) => {
           const tr = document.createElement('tr');
-          tr.innerHTML = '<td>' + l.term + '</td><td>' + l.def + '</td><td>' + l.ex + '</td>';
+          const td1 = document.createElement('td'); td1.textContent = l.term;
+          const td2 = document.createElement('td'); td2.textContent = l.def;
+          const td3 = document.createElement('td'); td3.textContent = l.ex; td3.className = 'example-col';
+          tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
           return tr;
         });
 
@@ -283,10 +286,10 @@
       } catch (err) {
         console.error('Render error', err);
         const main = document.querySelector('main');
-        const fallback = document.createElement('div');
-        fallback.className = 'card prose';
-        fallback.innerHTML = '<h2>Interactive content failed to load</h2><p>There was a script issue while rendering the data. Please reload. If the problem persists, copy this error to engineering: ' + (err && err.message ? err.message : 'unknown error') + '</p>';
-        main.appendChild(fallback);
+        const fb = document.createElement('div');
+        fb.className = 'card prose';
+        fb.innerHTML = '<h2>Interactive content failed to load</h2><p>If you are seeing empty sections, please reload this page. Error: ' + (err && err.message ? err.message : 'unknown') + '</p>';
+        main && main.appendChild(fb);
       }
     });
   </script>
