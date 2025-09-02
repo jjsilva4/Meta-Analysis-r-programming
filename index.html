@@ -70,6 +70,11 @@
 
     .callout { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); padding: 12px 14px; border-radius: 14px; color: var(--gk-white); }
     .muted { opacity: 0.9; }
+
+    .advice-list{display:grid;gap:12px;margin-top:12px}
+    .advice-item{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);padding:12px 14px;border-radius:14px;color:var(--gk-white)}
+    .advice-item .label{font-weight:700;color:var(--gk-white)}
+    .advice-item .text{opacity:0.95}
   </style>
 </head>
 <body>
@@ -138,160 +143,152 @@
     <section class="card prose">
       <div class="eyebrow">Advice</div>
       <h2>How to interact with this community</h2>
-      <ul>
-        <li>Lead with substance. Offer well reasoned takes backed by evidence or experience. Hype without rigor is dismissed.</li>
-        <li>Respect their time. Avoid wasteful interactions, irrelevant promotions, or overly complex solutions when simplicity works.</li>
-        <li>Take accountability seriously. Whether as a leader or a contributor, dodging responsibility erodes trust.</li>
-        <li>Honor open source values. Transparency, forkability, and user freedom are key to credibility.</li>
-        <li>Recognize the human side. Collaboration, curiosity about others, and sensitivity to mental health matter in this space.</li>
-      </ul>
+      <div class="advice-list">
+        <div class="advice-item"><span class="label">Lead with substance:</span> <span class="text">Offer well reasoned takes backed by evidence or experience. Hype without rigor is dismissed.</span></div>
+        <div class="advice-item"><span class="label">Respect their time:</span> <span class="text">Avoid wasteful interactions, irrelevant promotions, or overly complex solutions when simplicity works.</span></div>
+        <div class="advice-item"><span class="label">Take accountability seriously:</span> <span class="text">Whether as a leader or a contributor, dodging responsibility erodes trust.</span></div>
+        <div class="advice-item"><span class="label">Honor open source values:</span> <span class="text">Transparency, forkability, and user freedom are key to credibility.</span></div>
+        <div class="advice-item"><span class="label">Recognize the human side:</span> <span class="text">Collaboration, curiosity about others, and sensitivity to mental health matter in this space.</span></div>
+      </div>
     </section>
 
     <section class="card prose">
       <div class="eyebrow">Sources</div>
       <h2>Posts used in this analysis</h2>
-      <p class="muted">We analyzed 21 r/programming posts. Listed below in citation order.</p>
-      <ol>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n4xbw4/google_is_restricting_androids_freedom_say/">Google is Restricting Android's Freedom - Say Goodbye to Installing APKs</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mizw9u/in_the_future_all_food_will_be_cooked_in_a/">In the Future All Food Will Be Cooked in a Microwave</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mzofsk/aws_ceo_says_replacing_junior_developers_with_ai/">AWS CEO Says Replacing Junior Developers with AI Is the Dumbest Thing He's Ever Heard</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n5mw0m/brian_kernighan_on_rust/">Brian Kernighan on Rust</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mox7e5/github_folds_into_microsoft_following_ceo/">GitHub folds into Microsoft following CEO resignation</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n5h44i/r%C3%A9mi_forax_shows_off_project_valhallas_progress/">Remi Forax shows off Project Valhalla's progress</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n38vz6/petition_to_stop_googles_attack_on_android_devs/">Petition to stop Google's attack on Android devs</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n5p7rk/you_vibe_it_you_run_it/">You Vibe It, You Run It</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mxs92h/coinbase_ceo_explains_why_he_fired_engineers_who/">Coinbase CEO explains why he fired engineers who didn't try AI immediately</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n4ufic/turn_off_cursor_turn_on_your_mind/">Turn off Cursor, turn on your mind</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n3guzd/the_69_billion_domino_effect_how_vmwares/">The 69 Billion Domino Effect - How VMware's debt fueled acquisition is hurting open source</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n2cmqo/thoughts_on_vibe_coding_from_a_40year_veteran/">Thoughts on Vibe Coding from a 40 year veteran</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n4rioj/i_dont_like_numpy/">I don't like NumPy</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mqbyr3/no_ai_is_not_making_engineers_10x_as_productive/">No, AI is not making engineers 10x as productive</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n0gyht/google_will_require_developer_verification_to/">Google will require developer verification to install Android apps</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n4rpq7/nextjs_is_infuriating/">Next.js is infuriating</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n0k69y/new_mit_study_says_most_ai_projects_are_doomed/">New MIT study says most AI projects are doomed (Fireship YouTube)</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1n2xsd1/open_source_dilemma_in_the_eu_too_many_see/">Open source dilemma in the EU</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mi7149/github_ceo_thomas_dohmke_warns_developers_either/">GitHub CEO Thomas Dohmke warns developers to embrace AI</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mjygiu/the_enshittification_of_tech_jobs/">The enshittification of tech jobs</a></li>
-        <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/programming/comments/1mnj1o8/github_ceo_thomas_dohmke_to_step_down/">GitHub CEO Thomas Dohmke to step down</a></li>
-      </ol>
+      <p class="muted">We analyzed the 21 r/programming posts listed below.</p>
+      <ol id="sourcesList"></ol>
     </section>
+    <script>
+    (function () {
+      function byId(id){ return document.getElementById(id); }
+      function mountList(el, arr, render){ if(!el) return; arr.forEach((x,i)=> el.appendChild(render(x,i))); }
 
-    <footer>
-      Built for internal use.
-    </footer>
-  </main>
+      const beliefs = [
+        {emoji:"🖥️🔓", text:"Autonomy over computing is a right"},
+        {emoji:"🤖🤝👩‍💻", text:"AI is valuable as an assistant, not a replacement"},
+        {emoji:"📦✅", text:"Predictable, boring technologies are often the best choice"},
+        {emoji:"🏢⚠️", text:"Corporate consolidation erodes trust and worsens tools"},
+        {emoji:"📚✨", text:"Documentation and clarity matter as much as performance"},
+        {emoji:"🧑‍💼⚖️", text:"Leaders should hold harmful actors accountable"},
+        {emoji:"🤝❤️", text:"Collaboration and human connection matter"}
+      ];
+      mountList(byId('beliefsGrid'), beliefs, (b)=>{
+        const d=document.createElement('div'); d.className='belief-box';
+        d.innerHTML='<span class="belief-emoji">'+b.emoji+'</span><span>'+b.text+'</span>'; return d; });
+
+      const language = [
+        {term:"Vibe coding", def:"Coding by intuition or with heavy AI reliance, framed as sloppy", ex:"If this is vibe coding, then I am basically gambling every time I run a build."},
+        {term:"Foot-gun", def:"A risky feature or default that hurts the user", ex:"Next.js middleware is a total foot-gun for production apps."},
+        {term:"Magic", def:"Opaque abstractions that obscure what code is really doing", ex:"I do not trust this framework because there is too much magic under the hood."},
+        {term:"Enshittification", def:"Gradual decline of products and jobs under corporate pressure", ex:"Tech jobs are going through the enshittification stage right now."},
+        {term:"Crates and cargo", def:"Rust\'s package ecosystem, shorthand for its complexity", ex:"I got lost in crates and cargo just trying to get a basic project running."},
+        {term:"Escape hatches", def:"Ability to bypass framework defaults when needed", ex:"I will only use it if it has escape hatches when I need more control."},
+        {term:"Vendor lock-in", def:"Being trapped by a platform\'s ecosystem", ex:"Google\'s verification scheme is just vendor lock-in in disguise."},
+        {term:"Hallucination", def:"AI confidently producing wrong results", ex:"The model hallucinated an API endpoint that does not exist."},
+        {term:"Fail upward", def:"Executives moving into new roles despite failures", ex:"Yet another CEO manages to fail upward while we clean up the mess."},
+        {term:"Public money, public code", def:"Belief that government funded projects should be open source", ex:"We need a public money, public code policy to avoid repeats of XZ."}
+      ];
+      mountList(byId('languageTable'), language, (l)=>{ const tr=document.createElement('tr');
+        const td1=document.createElement('td'); td1.textContent=l.term; const td2=document.createElement('td'); td2.textContent=l.def; const td3=document.createElement('td'); td3.textContent=l.ex; td3.className='example-col'; tr.append(td1,td2,td3); return tr; });
+
+      const artifacts = [
+        {emoji:"📱🔓", name:"Android APKs / Play Store / F-Droid", meaning:"Symbols of autonomy and resistance"},
+        {emoji:"📲🐧", name:"GrapheneOS / Linux phones / ReVanced", meaning:"Alternative ecosystems for user freedom"},
+        {emoji:"🖼️⚙️", name:"Next.js / ASP.NET Core / SvelteKit / Nuxt / Spring Boot / Laravel", meaning:"Frameworks compared for trust and usability"},
+        {emoji:"🛠️⚡", name:"Webpack / Vite", meaning:"Build tools representing generational shifts"},
+        {emoji:"🦀📦", name:"Rust and Cargo / Crates", meaning:"Ecosystem shaping debates about complexity and safety"},
+        {emoji:"🔢📊", name:"NumPy / APL glyphs / Uiua / BQN / Julia", meaning:"Array languages debating expressiveness vs readability"},
+        {emoji:"🤖💻", name:"GitHub Copilot / Cursor / Claude / ChatGPT", meaning:"AI coding assistants under debate"},
+        {emoji:"📺📑", name:"Fireship YouTube / MIT AI report", meaning:"Media artifacts shaping discourse and credibility"},
+        {emoji:"🔧🔄", name:"GitHub Actions / Pull Requests", meaning:"Developer tools valued more than AI assistants"},
+        {emoji:"🏢💰", name:"VMware & Broadcom / Bitnami", meaning:"Corporate case studies of OSS exploitation"},
+        {emoji:"🇪🇺💶", name:"Sovereign Tech Fund / Horizon Program", meaning:"EU funding programs tied to OSS debates"}
+      ];
+      mountList(byId('artifactsGrid'), artifacts, (a)=>{ const d=document.createElement('div'); d.className='artifact-box'; d.innerHTML='<span class="artifact-emoji">'+a.emoji+'</span><span class="artifact-name">'+a.name+'</span><span class="artifact-meaning">'+a.meaning+'</span>'; return d; });
+
+      const rituals = [
+        {emoji:"✊📢", text:"Petitioning and protesting against corporate overreach"},
+        {emoji:"📝⚔️", text:"Posting migration stories and war tales when tools fail"},
+        {emoji:"🔍📑", text:"Policing sources and demanding primary documentation"},
+        {emoji:"✏️🔎", text:"Nitpicking grammar and terminology as credibility checks"},
+        {emoji:"😂🎭", text:"Using humor (memes, satire) to cope with anxiety"},
+        {emoji:"🚢🤖", text:"Reasserting responsibility for shipped code, even with AI in the loop"}
+      ];
+      mountList(byId('ritualsGrid'), rituals, (r)=>{ const d=document.createElement('div'); d.className='ritual-box'; d.innerHTML='<span class="ritual-emoji">'+r.emoji+'</span><span>'+r.text+'</span>'; return d; });
+
+      const themes = [
+        {emoji:"🔓", title:"Autonomy vs. Control", desc:"The fight over APKs, OSS forks, and acquisitions centers on freedom."},
+        {emoji:"🤖❓", title:"Pragmatic AI Skepticism", desc:"AI is welcomed as an accelerator, mistrusted as a hype fueled replacement."},
+        {emoji:"📦✨", title:"The Virtue of Boring Tech", desc:"Reliability, predictability, and documentation beat novelty."},
+        {emoji:"🧩⚠️", title:"Open Source Precarity", desc:"OSS is critical infrastructure but fragile and underfunded."},
+        {emoji:"🧪✅", title:"Identity and Judgment", desc:"Credibility is earned via design rigor and source citation."},
+        {emoji:"📚🧭", title:"Legibility as Inclusion", desc:"Clear docs, APIs, and transparent abstractions are a responsibility."}
+      ];
+      const themeClasses=['theme-1','theme-2','theme-3','theme-4','theme-5','theme-6'];
+      mountList(byId('themesGrid'), themes, (t,i)=>{ const d=document.createElement('div'); d.className='theme-card '+themeClasses[i%themeClasses.length]; d.innerHTML='<div class="theme-title"><span class="theme-emoji">'+t.emoji+'</span> '+t.title+'</div><div class="theme-desc">'+t.desc+'</div>'; return d; });
+
+      const sources=[
+        {url:"https://www.reddit.com/r/programming/comments/1n4xbw4/google_is_restricting_androids_freedom_say/", title:"Google is Restricting Android's Freedom - Say Goodbye to Installing APKs"},
+        {url:"https://www.reddit.com/r/programming/comments/1mizw9u/in_the_future_all_food_will_be_cooked_in_a/", title:"In the Future All Food Will Be Cooked in a Microwave"},
+        {url:"https://www.reddit.com/r/programming/comments/1mzofsk/aws_ceo_says_replacing_junior_developers_with_ai/", title:"AWS CEO Says Replacing Junior Developers with AI Is the Dumbest Thing He's Ever Heard"},
+        {url:"https://www.reddit.com/r/programming/comments/1n5mw0m/brian_kernighan_on_rust/", title:"Brian Kernighan on Rust"},
+        {url:"https://www.reddit.com/r/programming/comments/1mox7e5/github_folds_into_microsoft_following_ceo/", title:"GitHub folds into Microsoft following CEO resignation"},
+        {url:"https://www.reddit.com/r/programming/comments/1n5h44i/r%C3%A9mi_forax_shows_off_project_valhallas_progress/", title:"Rémi Forax shows off Project Valhalla's progress"},
+        {url:"https://www.reddit.com/r/programming/comments/1n38vz6/petition_to_stop_googles_attack_on_android_devs/", title:"Petition to stop Google's attack on Android devs"},
+        {url:"https://www.reddit.com/r/programming/comments/1n5p7rk/you_vibe_it_you_run_it/", title:"You Vibe It, You Run It"},
+        {url:"https://www.reddit.com/r/programming/comments/1mxs92h/coinbase_ceo_explains_why_he_fired_engineers_who/", title:"Coinbase CEO explains why he fired engineers who didn't try AI immediately"},
+        {url:"https://www.reddit.com/r/programming/comments/1n4ufic/turn_off_cursor_turn_on_your_mind/", title:"Turn off Cursor, turn on your mind"},
+        {url:"https://www.reddit.com/r/programming/comments/1n3guzd/the_69_billion_domino_effect_how_vmwares/", title:"The 69 Billion Domino Effect - How VMware's debt fueled acquisition is hurting open source"},
+        {url:"https://www.reddit.com/r/programming/comments/1n2cmqo/thoughts_on_vibe_coding_from_a_40year_veteran/", title:"Thoughts on Vibe Coding from a 40 year veteran"},
+        {url:"https://www.reddit.com/r/programming/comments/1n4rioj/i_dont_like_numpy/", title:"I don't like NumPy"},
+        {url:"https://www.reddit.com/r/programming/comments/1mqbyr3/no_ai_is_not_making_engineers_10x_as_productive/", title:"No, AI is not making engineers 10x as productive"},
+        {url:"https://www.reddit.com/r/programming/comments/1n0gyht/google_will_require_developer_verification_to/", title:"Google will require developer verification to install Android apps"},
+        {url:"https://www.reddit.com/r/programming/comments/1n4rpq7/nextjs_is_infuriating/", title:"Next.js is infuriating"},
+        {url:"https://www.reddit.com/r/programming/comments/1n0k69y/new_mit_study_says_most_ai_projects_are_doomed/", title:"New MIT study says most AI projects are doomed (Fireship YouTube)"},
+        {url:"https://www.reddit.com/r/programming/comments/1n2xsd1/open_source_dilemma_in_the_eu_too_many_see/", title:"Open source dilemma in the EU"},
+        {url:"https://www.reddit.com/r/programming/comments/1mi7149/github_ceo_thomas_dohmke_warns_developers_either/", title:"GitHub CEO Thomas Dohmke warns developers to embrace AI"},
+        {url:"https://www.reddit.com/r/programming/comments/1mjygiu/the_enshittification_of_tech_jobs/", title:"The enshittification of tech jobs"},
+        {url:"https://www.reddit.com/r/programming/comments/1mnj1o8/github_ceo_thomas_dohmke_to_step_down/", title:"GitHub CEO Thomas Dohmke to step down"}
+      ];
+      mountList(byId('sourcesList'), sources, (s)=>{ const li=document.createElement('li'); const a=document.createElement('a'); a.href=s.url; a.target='_blank'; a.rel='noopener'; a.textContent=s.title; li.appendChild(a); return li; });
+    })();
+  </script>
+</main>
 
   <script>
-    // Render dynamic sections. If anything fails, show a readable fallback.
-    document.addEventListener('DOMContentLoaded', function () {
-      try {
-        const data = {
-          beliefs: [
-            { text: 'Autonomy over computing is a right', emoji: '🖥️🔓' },
-            { text: 'AI is valuable as an assistant, not a replacement', emoji: '🤖🤝👩‍💻' },
-            { text: 'Predictable, boring technologies are often the best choice', emoji: '📦✅' },
-            { text: 'Corporate consolidation erodes trust and worsens tools', emoji: '🏢⚠️' },
-            { text: 'Documentation and clarity matter as much as performance', emoji: '📚✨' },
-            { text: 'Leaders should hold harmful actors accountable', emoji: '🧑‍💼⚖️' },
-            { text: 'Collaboration and human connection matter', emoji: '🤝❤️' }
-          ],
-          language: [
-            { term: 'Vibe coding', def: 'Coding by intuition or with heavy AI reliance, framed as sloppy', ex: 'If this is vibe coding, then I am basically gambling every time I run a build.' },
-            { term: 'Foot-gun', def: 'A risky feature or default that hurts the user', ex: 'Next.js middleware is a total foot-gun for production apps.' },
-            { term: 'Magic', def: 'Opaque abstractions that obscure what code is really doing', ex: 'I do not trust this framework because there is too much magic under the hood.' },
-            { term: 'Enshittification', def: 'Gradual decline of products and jobs under corporate pressure', ex: 'Tech jobs are going through the enshittification stage right now.' },
-            { term: 'Crates and cargo', def: 'Rust\'s package ecosystem, shorthand for its complexity', ex: 'I got lost in crates and cargo just trying to get a basic project running.' },
-            { term: 'Escape hatches', def: 'Ability to bypass framework defaults when needed', ex: 'I will only use it if it has escape hatches when I need more control.' },
-            { term: 'Vendor lock-in', def: 'Being trapped by a platform\'s ecosystem', ex: 'Google\'s verification scheme is just vendor lock-in in disguise.' },
-            { term: 'Hallucination', def: 'AI confidently producing wrong results', ex: 'The model hallucinated an API endpoint that does not exist.' },
-            { term: 'Fail upward', def: 'Executives moving into new roles despite failures', ex: 'Yet another CEO manages to fail upward while we clean up the mess.' },
-            { term: 'Public money, public code', def: 'Belief that government funded projects should be open source', ex: 'We need a public money, public code policy to avoid repeats of XZ.' }
-          ],
-          artifacts: [
-            { name: 'Android APKs / Play Store / F-Droid', meaning: 'Symbols of autonomy and resistance', emoji: '📱🔓' },
-            { name: 'GrapheneOS / Linux phones / ReVanced', meaning: 'Alternative ecosystems for user freedom', emoji: '📲🐧' },
-            { name: 'Next.js / ASP.NET Core / SvelteKit / Nuxt / Spring Boot / Laravel', meaning: 'Frameworks compared for trust and usability', emoji: '🖼️⚙️' },
-            { name: 'Webpack / Vite', meaning: 'Build tools representing generational shifts', emoji: '🛠️⚡' },
-            { name: 'Rust and Cargo / Crates', meaning: 'Ecosystem shaping debates about complexity and safety', emoji: '🦀📦' },
-            { name: 'NumPy / APL glyphs / Uiua / BQN / Julia', meaning: 'Array languages debating expressiveness vs readability', emoji: '🔢📊' },
-            { name: 'GitHub Copilot / Cursor / Claude / ChatGPT', meaning: 'AI coding assistants under debate', emoji: '🤖💻' },
-            { name: 'Fireship YouTube / MIT AI report', meaning: 'Media artifacts shaping discourse and credibility', emoji: '📺📑' },
-            { name: 'GitHub Actions / Pull Requests', meaning: 'Developer tools valued more than AI assistants', emoji: '🔧🔄' },
-            { name: 'VMware & Broadcom / Bitnami', meaning: 'Corporate case studies of OSS exploitation', emoji: '🏢💰' },
-            { name: 'Sovereign Tech Fund / Horizon Program', meaning: 'EU funding programs tied to OSS debates', emoji: '🇪🇺💶' }
-          ],
-          rituals: [
-            { text: 'Petitioning and protesting against corporate overreach', emoji: '✊📢' },
-            { text: 'Posting migration stories and war tales when tools fail', emoji: '📝⚔️' },
-            { text: 'Policing sources and demanding primary documentation', emoji: '🔍📑' },
-            { text: 'Nitpicking grammar and terminology as credibility checks', emoji: '✏️🔎' },
-            { text: 'Using humor (memes, satire) to cope with anxiety', emoji: '😂🎭' },
-            { text: 'Reasserting responsibility for shipped code, even with AI in the loop', emoji: '🚢🤖' }
-          ],
-          themes: [
-            { title: 'Autonomy vs. Control', desc: 'The fight over APKs, OSS forks, and acquisitions centers on freedom.', emoji: '🔓' },
-            { title: 'Pragmatic AI Skepticism', desc: 'AI is welcomed as an accelerator, mistrusted as a hype fueled replacement.', emoji: '🤖❓' },
-            { title: 'The Virtue of Boring Tech', desc: 'Reliability, predictability, and documentation beat novelty.', emoji: '📦✨' },
-            { title: 'Open Source Precarity', desc: 'OSS is critical infrastructure but fragile and underfunded.', emoji: '🧩⚠️' },
-            { title: 'Identity and Judgment', desc: 'Credibility is earned via design rigor and source citation.', emoji: '🧪✅' },
-            { title: 'Legibility as Inclusion', desc: 'Clear docs, APIs, and transparent abstractions are a responsibility.', emoji: '📚🧭' }
-          ]
-        };
+    (function () {
+      function byId(id){ return document.getElementById(id); }
+      function mountList(el, arr, render){ if(!el) return; arr.forEach((x,i)=> el.appendChild(render(x,i))); }
 
-        const byId = (id) => document.getElementById(id);
-        const mountList = (el, arr, render) => { if (!el) return; arr.forEach((item, i) => el.appendChild(render(item, i))); };
+      const beliefs = [
+        {emoji: "🖥️🔓", text: "Autonomy over computing is a right"},
+        {emoji: "🤖🤝👩‍💻", text: "AI is valuable as an assistant, not a replacement"},
+        {emoji: "📦✅", text: "Predictable, boring technologies are often the best choice"},
+        {emoji: "🏢⚠️", text: "Corporate consolidation erodes trust and worsens tools"},
+        {emoji: "📚✨", text: "Documentation and clarity matter as much as performance"},
+        {emoji: "🧑‍💼⚖️", text: "Leaders should hold harmful actors accountable"},
+        {emoji: "🤝❤️", text: "Collaboration and human connection matter"}
+      ];
+      mountList(byId('beliefsGrid'), beliefs, b => {
+        const d = document.createElement('div');
+        d.className = 'belief-box';
+        d.innerHTML = '<span class="belief-emoji">' + b.emoji + '</span><span>' + b.text + '</span>';
+        return d;
+      });
 
-        // Beliefs
-        mountList(byId('beliefsGrid'), data.beliefs, (b) => {
-          const d = document.createElement('div');
-          d.className = 'belief-box';
-          d.innerHTML = '<span class="belief-emoji">' + b.emoji + '</span><span>' + b.text + '</span>';
-          return d;
-        });
-
-        // Language
-        mountList(byId('languageTable'), data.language, (l) => {
-          const tr = document.createElement('tr');
-          const td1 = document.createElement('td'); td1.textContent = l.term;
-          const td2 = document.createElement('td'); td2.textContent = l.def;
-          const td3 = document.createElement('td'); td3.textContent = l.ex; td3.className = 'example-col';
-          tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
-          return tr;
-        });
-
-        // Artifacts
-        mountList(byId('artifactsGrid'), data.artifacts, (a) => {
-          const d = document.createElement('div');
-          d.className = 'artifact-box';
-          d.innerHTML = '<span class="artifact-emoji">' + a.emoji + '</span><span class="artifact-name">' + a.name + '</span><span class="artifact-meaning">' + a.meaning + '</span>';
-          return d;
-        });
-
-        // Rituals
-        mountList(byId('ritualsGrid'), data.rituals, (r) => {
-          const d = document.createElement('div');
-          d.className = 'ritual-box';
-          d.innerHTML = '<span class="ritual-emoji">' + r.emoji + '</span><span>' + r.text + '</span>';
-          return d;
-        });
-
-        // Themes
-        const themeClasses = ['theme-1','theme-2','theme-3','theme-4','theme-5','theme-6'];
-        mountList(byId('themesGrid'), data.themes, (t, idx) => {
-          const d = document.createElement('div');
-          d.className = 'theme-card ' + themeClasses[idx % themeClasses.length];
-          d.innerHTML = '<div class="theme-title"><span class="theme-emoji">' + t.emoji + '</span> ' + t.title + '</div><div class="theme-desc">' + t.desc + '</div>';
-          return d;
-        });
-      } catch (err) {
-        console.error('Render error', err);
-        const main = document.querySelector('main');
-        const fb = document.createElement('div');
-        fb.className = 'card prose';
-        fb.innerHTML = '<h2>Interactive content failed to load</h2><p>If you are seeing empty sections, please reload this page. Error: ' + (err && err.message ? err.message : 'unknown') + '</p>';
-        main && main.appendChild(fb);
-      }
-    });
-  </script>
-</body>
-</html>
+      const language = [
+        {term: "Vibe coding", def: "Coding by intuition or with heavy AI reliance, framed as sloppy", ex: "If this is vibe coding, then I am basically gambling every time I run a build."},
+        {term: "Foot-gun", def: "A risky feature or default that hurts the user", ex: "Next.js middleware is a total foot-gun for production apps."},
+        {term: "Magic", def: "Opaque abstractions that obscure what code is really doing", ex: "I do not trust this framework because there is too much magic under the hood."},
+        {term: "Enshittification", def: "Gradual decline of products and jobs under corporate pressure", ex: "Tech jobs are going through the enshittification stage right now."},
+        {term: "Crates and cargo", def: "Rust's package ecosystem, shorthand for its complexity", ex: "I got lost in crates and cargo just trying to get a basic project running."},
+        {term: "Escape hatches", def: "Ability to bypass framework defaults when needed", ex: "I will only use it if it has escape hatches when I need more control."},
+        {term: "Vendor lock-in", def: "Being trapped by a platform's ecosystem", ex: "Google's verification scheme is just vendor lock-in in disguise."},
+        {term: "Hallucination", def: "AI confidently producing wrong results", ex: "The model hallucinated an API endpoint that does not exist."},
+        {term: "Fail upward", def: "Executives moving into new roles despite failures", ex: "Yet another CEO manages to fail upward while we clean up the mess."},
+        {term: "Public money, public code", def: "Belief that government funded projects should be open source", ex: "We need a public money, public code policy to avoid repeats of XZ."}
+      ];
+      mountList(byId('languageTable'), language, l => {
+        const tr = document.createElement('tr');
+        const td1 = document.createElement('td'); td1.textContent = l.term;
+        const td2 = document.createElement('td'); td2.textContent
